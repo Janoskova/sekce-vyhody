@@ -12,6 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   background-color: #f4f5f5;
+  margin: 0;
 }
 
 .content {
@@ -20,7 +21,75 @@ body {
   margin: auto;
 }
 
-h1 {
+/* HEADER */
+
+header {
+  background-image: url(images/main_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #bb1f1f;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.header__alza {
+  margin-top: 98px;
+}
+
+.header__text--main {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  display: inline-block;
+  margin-top: 80px;
+}
+
+.header__button {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: #a1c900;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  width: 256px;
+}
+
+.header__button:hover {
+  background-color: #84a500;
+  text-decoration: underline;
+}
+
+.header__link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+}
+
+.header__link:hover {
+  color: white;
+}
+
+.header__text--additional {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  margin-top: 115px;
+  margin-bottom: 35px;
+}
+
+.header__woman {
+  display: none;
+}
+
+/* section ADVANTAGES */
+.advantages {
+  padding: 10px;
+}
+.advantages h1 {
   font-size: 34px;
   margin-top: 98px;
   margin-bottom: 70px;
@@ -69,7 +138,7 @@ h1 {
   font-size: 14px;
 }
 
-.savings {
+.advantages__savings {
   margin-top: 40px;
 }
 
@@ -92,35 +161,112 @@ h1 {
   margin-right: 30px;
 }
 
-.savings h3 {
+.advantages__savings h3 {
   font-size: 20px;
   text-align: left;
   margin: 0;
 }
 
-.savings p {
+.advantages__savings p {
   font-size: 14px;
   text-align: left;
   margin: 15px 0 0 0;
 }
 
-.calculation {
+.advantages__calculation {
   font-size: 14px;
   color: black;
   display: inline-block;
   margin-bottom: 120px;
 }
 
-.calculation:hover {
+.advantages__calculation:hover {
   color: #c12727;
 }
+
+/* FOOTER */
+footer {
+  background-image: url(images/footer_background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #bb1f1f;
+  padding: 0 20px 0 20px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+footer h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  margin-bottom: 70px;
+  padding-top: 100px;
+}
+
+footer span {
+  display: inline-block;
+  font-size: 16px;
+  max-width: 383px;
+}
+
+.footer__links img {
+  background-color: white;
+}
+
+.footer__links {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.footer__woman {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* TABLET */
 
 @media screen and (min-width: 640px) {
   .content {
     max-width: 768px;
   }
 
-  .savings {
+  /* HEADER */
+
+  header {
+    padding: 0;
+    text-align: center;
+  }
+
+  .header__alza {
+    margin-top: 125px;
+  }
+
+  .header--flex {
+    display: flex;
+  }
+
+  .header__text--main {
+    padding-left: 40px;
+    text-align: left;
+    flex-basis: 50%;
+  }
+
+  .header__woman {
+    display: inline-block;
+    max-width: 50%;
+  }
+
+  .header__link {
+    display: block;
+    text-align: center;
+  }
+
+  .header__text--additional {
+    padding: 0 40px 0 40px;
+  }
+
+  /* section ADVANTAGES */
+  .advantages__savings {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 60px;
@@ -143,11 +289,58 @@ h1 {
   }
 }
 
+/* PC */
+
 @media screen and (min-width: 1100px) {
   .content {
     max-width: 1200px;
   }
-  .savings {
+
+  /* HEADER */
+  header {
+    position: relative;
+    padding-left: 85px;
+    text-align: left;
+  }
+
+  .header--left {
+    max-width: 50%;
+  }
+
+  .header--flex {
+    display: block;
+  }
+
+  .header__text--main {
+    padding-left: 0px;
+  }
+
+  .header__woman {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .header--align {
+    max-width: 256px;
+  }
+  .header__button {
+    text-align: center;
+  }
+
+  .header__link {
+    display: block;
+    text-align: center;
+  }
+
+  .header__text--additional {
+    padding: 0;
+    max-width: 90%;
+  }
+
+  /* section ADVANTAGES */
+  .advantages__savings {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -170,14 +363,34 @@ h1 {
     margin: auto;
   }
 
-  .savings h3 {
+  .advantages__savings h3 {
     text-align: center;
     margin-top: 10px;
   }
 
-  .savings p {
+  .advantages__savings p {
     text-align: center;
     margin: 30px 0 0 0;
     min-width: 240px;
+  }
+
+  /* FOOTER */
+  footer {
+    position: relative;
+  }
+
+  .footer__woman {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .footer--text {
+    padding-left: 120px;
+  }
+
+  .footer__links {
+    padding-bottom: 100px;
+    margin-bottom: 0;
   }
 }

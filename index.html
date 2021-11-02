@@ -7,65 +7,117 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <main class="content">
-      <title>Výhody</title>
-      <h1>Výhody, které se vyplatí</h1>
-      <div class="advantages__switcher">
-        <a class="advantages--monthly" href="#">Měsíční úspora</a>
-        <a class="advantages--yearly selected" href="#">Roční úspora</a>
-      </div>
-      <h2 class="advantages__total">22 750 Kč</h2>
-      <span class="advantages--premium"
-        >Průměrná roční úspora člena Alza Premium</span
-      >
-      <section class="savings">
-        <div class="savings__item">
-          <img src="images/transport.svg" alt="doprava" />
-          <div>
-            <h3>1&nbsp;250&nbsp;Kč</h3>
-            <p>
-              Tolik průměrně ušetří každý náš zákazník, který minimálně rok
-              využívá služeb Alza Premium, na dopravě.
-            </p>
+      <title>Alza Premium</title>
+      <header>
+        <div class="header--left">
+          <img class="header__alza" src="images/header_alza.PNG" alt="nadpis" />
+          <div class="header--flex">
+            <span class="header__text--main"
+              >Užívejte si prémiových služeb, které si zasloužíte.</span
+            >
+            <img
+              class="header__woman"
+              src="images/women-ap.svg"
+              alt="žena se sluchátky"
+            />
           </div>
+          <div class="header--align">
+            <a class="header__button" href="#">Vyzkoušet zdarma</a>
+            <a class="header__link" href="#">Uplatnit slevový kód</a>
+          </div>
+          <span class="header__text--additional"
+            >Zkušební verze je zdarma na 30 dní. Poté Alza Premium stojí jen
+            249&nbsp;Kč měsíčně. Službu můžete samozřejmě kdykoliv zrušit.</span
+          >
         </div>
-        <div class="savings__item">
-          <img src="images/customer.svg" alt="zákazník" />
+      </header>
+      <section class="advantages">
+        <h1>Výhody, které se vyplatí</h1>
+        <div class="advantages__switcher">
+          <a class="advantages--monthly" href="#">Měsíční úspora</a>
+          <a class="advantages--yearly selected" href="#">Roční úspora</a>
+        </div>
+        <h2 class="advantages__total">22 750 Kč</h2>
+        <span class="advantages--premium"
+          >Průměrná roční úspora člena Alza Premium</span
+        >
+        <div class="advantages__savings">
+          <div class="savings__item">
+            <img src="images/transport.svg" alt="doprava" />
+            <div>
+              <h3>1&nbsp;250&nbsp;Kč</h3>
+              <p>
+                Tolik průměrně ušetří každý náš zákazník, který minimálně rok
+                využívá služeb Alza Premium, na dopravě.
+              </p>
+            </div>
+          </div>
+          <div class="savings__item">
+            <img src="images/customer.svg" alt="zákazník" />
 
-          <div>
-            <h3>19&nbsp;500&nbsp;Kč</h3>
-            <p>
-              Tolik je průměrná úspora na zboží, které zákazníci Alza Premium
-              nakoupí v akcích Premium Deals.
-            </p>
+            <div>
+              <h3>19&nbsp;500&nbsp;Kč</h3>
+              <p>
+                Tolik je průměrná úspora na zboží, které zákazníci Alza Premium
+                nakoupí v akcích Premium Deals.
+              </p>
+            </div>
+          </div>
+          <div class="savings__item">
+            <img src="images/clever_purchase.svg" alt="chytrý nákup" />
+            <div>
+              <h3>135&nbsp;produktů</h3>
+              <p>
+                Zhruba tolik produktů ročně zlevníme v Premium Deals. Každý
+                měsíc více jak 10 skvělých nabídek.
+              </p>
+            </div>
+          </div>
+          <div class="savings__item">
+            <img src="images/handover_goods.svg" alt="výdej zboží" />
+            <div>
+              <h3>15&nbsp;hodin</h3>
+              <p>
+                Nesnášíte čekání ve frontě? Tak 28 hodin ročně času vám ušetříme
+                přednostním výdejem.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="savings__item">
-          <img src="images/clever_purchase.svg" alt="chytrý nákup" />
-          <div>
-            <h3>135&nbsp;produktů</h3>
-            <p>
-              Zhruba tolik produktů ročně zlevníme v Premium Deals. Každý měsíc
-              více jak 10 skvělých nabídek.
-            </p>
-          </div>
-        </div>
-        <div class="savings__item">
-          <img src="images/handover_goods.svg" alt="výdej zboží" />
-          <div>
-            <h3>15&nbsp;hodin</h3>
-            <p>
-              Nesnášíte čekání ve frontě? Tak 28 hodin ročně času vám ušetříme
-              přednostním výdejem.
-            </p>
-          </div>
-        </div>
+        <a class="advantages__calculation" href="#"
+          >Jak jsme spočítali úsporu?</a
+        >
       </section>
-      <a class="calculation" href="#">Jak jsme spočítali úsporu?</a>
+      <footer>
+        <div class="footer--text">
+          <h2>Podělte se s ostatními</h2>
+          <span
+            >Zaujala vás nabídka? Tak proč si ji nechávat pro sebe. Udělejte
+            radost známým!</span
+          >
+          <nav class="footer__links">
+            <a href="#"
+              ><img src="images/icon_facebook.svg" alt="facebook"
+            /></a>
+            <a href="#"><img src="images/icon_twitter.svg" alt="twitter" /></a>
+            <a href="#"> <img src="images/icon_gmail.svg" alt="gmail" /></a>
+            <a href="#"
+              ><img src="images/icon_linkedin.svg" alt="linkedin"
+            /></a>
+          </nav>
+        </div>
+        <img
+          class="footer__woman"
+          src="images/women_bottom.svg"
+          alt="žena se
+        sluchátky"
+        />
+      </footer>
     </main>
   </head>
   <body>
