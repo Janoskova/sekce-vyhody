@@ -155,7 +155,7 @@ header {
 
 .advantages h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 34px;
+  font-size: 40px;
   margin-top: 98px;
   margin-bottom: 70px;
 }
@@ -255,6 +255,7 @@ header {
 }
 .rates h1 {
   font-family: 'Poppins', sans-serif;
+  font-size: 40px;
   margin-top: 110px;
   margin-bottom: 56px;
 }
